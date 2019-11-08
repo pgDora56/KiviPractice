@@ -1,0 +1,31 @@
+QCountWidget:
+
+<QCountWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.size
+
+        Label:
+            id: label1
+            font_size: 68
+            text: root.text
+            
+        BoxLayout:
+            
+            Button:
+                id: button1
+                text: "Correct"
+                font_size: 32            
+                on_press: root.correct()
+                
+            Button:
+                id: button2
+                text: "Wrong"
+                font_size: 32 
+                on_press: root.wrong()
+
+            Button:
+                id: button3
+                text: "Reset"
+                font_size: 32 
+                on_press: root.reset()
